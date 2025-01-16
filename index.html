@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h3>Öğrenci Girişi</h3>
+            <input type="text" id="ogrenciKullanici" placeholder="Kullanıcı Adı">
+            <input type="password" id="ogrenciSifre" placeholder="Şifre">
+            <button onclick="ogrenciGirisi()">Giriş Yap</button>
+        </div>
+        <div class="form-box">
+            <h3>Personel Girişi</h3>
+            <input type="text" id="personelKullanici" placeholder="Kullanıcı Adı">
+            <input type="password" id="personelSifre" placeholder="Şifre">
+            <button onclick="personelGirisi()">Giriş Yap</button>
+        </div>
+    </div>
+    <script>
+        function ogrenciGirisi() {
+            const kullanici = document.getElementById('ogrenciKullanici').value;
+            const sifre = document.getElementById('ogrenciSifre').value;
+            if (kullanici === 'ogrenci1' && sifre === '123abc') {
+                window.location.href = 'ogrenci.html';
+            } else {
+                alert('Hatalı kullanıcı adı veya şifre!');
+            }
+        }
+
+        function personelGirisi() {
+            const kullanici = document.getElementById('personelKullanici').value;
+            const sifre = document.getElementById('personelSifre').value;
+            if (kullanici === 'personel1' && sifre === 'abc123') {
+                window.location.href = 'personel.html';
+            } else {
+                alert('Hatalı kullanıcı adı veya şifre!');
+            }
+        }
+    </script>
+</body>
+</html>

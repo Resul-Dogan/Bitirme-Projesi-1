@@ -1,0 +1,82 @@
+/* Genel Ayarlar */
+/* Tüm sayfa için genel stil ayarları, varsayılan font, arka plan ve metin rengi belirleniyor */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Açık gri arka plan rengi */
+    color: #333; /* Metin rengi */
+}
+
+/* Header Alanı */
+/* Sayfanın üst kısmındaki başlık alanı (header) için stiller */
+.header {
+    background-color: #4CAF50; /* Yeşil header arka planı */
+    color: white; /* Beyaz yazı rengi */
+    text-align: center; /* Yazıları merkeze hizalama */
+    padding: 20px 0; /* Üst ve alt boşluk */
+}
+
+.header h1 {
+    margin: 0; /* Üst ve alt boşlukları kaldırma */
+    font-size: 36px; /* Başlık yazı boyutu */
+}
+
+.header h2 {
+    margin: 5px 0 0 0; /* Alt ve üst boşluk ayarı */
+    font-size: 20px; /* Alt başlık yazı boyutu */
+    font-weight: normal; /* Normal kalınlıkta yazı */
+}
+
+/* Ana İçerik Alanı */
+/* Header altındaki tüm içeriği kapsayan alan */
+.main-container {
+    display: flex; /* Yatayda hizalama için flexbox kullanımı */
+    height: calc(100vh - 80px); /* Header'dan geri kalan dikey alanı kaplama */
+}
+
+/* Sol Menü Alanı */
+/* Sayfanın sol tarafında öğrenci bilgilerini göstermek için kullanılan sidebar */
+.sidebar {
+    width: 250px; /* Yan menünün genişliği */
+    background-color: #2C3E50; /* Koyu mavi arka plan rengi */
+    color: white; /* Beyaz yazı rengi */
+    display: flex; /* Flexbox düzeni */
+    flex-direction: column; /* Elemanları dikeyde hizalama */
+    align-items: center; /* Elemanları yatayda merkeze hizalama */
+    padding-top: 20px; /* Üst boşluk */
+    padding-left: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Yan menü için hafif gölge */
+}
+
+/* Öğrenci Profil Alanı */
+/* Sidebar içerisindeki öğrenci fotoğrafı ve bilgileri için stiller */
+.sidebar .profile img {
+    display: block; /* Blok olarak davranmasını sağlar */
+    margin: 0 auto; /* Yatayda ortalamak için margin ayarı */
+    width: 120px; /* Fotoğraf genişliği */
+    height: 120px; /* Fotoğraf yüksekliği */
+    border-radius: 50%; /* Yuvarlak çerçeve */
+    border: 4px solid #4CAF50; /* Yeşil kenarlık */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+
+.sidebar .profile h3 {
+    margin: 10px 0 5px; /* Üst ve alt boşluk ayarı */
+    font-size: 18px; /* Ad Soyad yazı boyutu */
+}
+
+.sidebar .profile p {
+    margin: 5px 0; /* Bilgiler arası boşluk */
+    font-size: 16px; /* Bilgiler yazı boyutu */
+}
+
+/* İçerik Alanı */
+/* Öğrenci bilgileri dışında kalan içerik alanı */
+.content {
+    flex: 1; /* Yan menünün dışında kalan alanı kapla */
+    background-color: #ffffff; /* Beyaz arka plan rengi */
+    padding: 20px; /* İçerik alanının kenar boşlukları */
+    overflow-y: auto; /* İçerik taşarsa kaydırma çubuğu göster */
+}

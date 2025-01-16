@@ -1,0 +1,56 @@
+body {
+    background-color: #add8e6; /* Arka plan mavi */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.form-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Giriş kutucuklarının genişliğini artırdık */
+    box-sizing: border-box; /* Padding'in taşmasını önler */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Elemanlar arasında boşluk */
+}
+
+.form-box h3 {
+    text-align: center;
+    margin-bottom: 20px; /* Başlık ile giriş kutuları arasındaki boşluk */
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"] {
+    width: 90%; /* Kenarlardan eşit boşluk bırak */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-box button {
+    width: 90%; /* Buton da giriş kutularıyla aynı genişlikte */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Buton ile giriş alanı arasında boşluk */
+}
+
+.form-box button:hover {
+    background-color: #45a049;
+}
